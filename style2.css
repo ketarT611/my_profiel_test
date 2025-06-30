@@ -1,0 +1,122 @@
+/* Google Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* --- 全体の基本スタイル --- */
+body {
+    font-family: 'Poppins', sans-serif; /* モダンなフォントに変更 */
+    line-height: 1.8;
+    color: #e0e0e0; /* 明るいテキストカラー */
+    background: #121212; /* ダークテーマの背景 */
+    margin: 0;
+    padding: 20px; /* ボディにパディングを追加 */
+}
+
+/* --- ヘッダー --- */
+header {
+    background: linear-gradient(45deg, #f39c12, #e74c3c); /* グラデーション背景 */
+    color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 12px; /* 角を丸く */
+    margin-bottom: 40px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.8em; /* フォントサイズを大きく */
+    font-weight: 600;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3); /* テキストに影を追加 */
+}
+
+/* --- メインコンテンツ --- */
+main {
+    max-width: 850px;
+    margin: 0 auto; /* 中央揃え */
+    padding: 0;
+}
+
+/* --- 各セクション --- */
+section {
+    background: #1e1e1e; /* セクションの背景色 */
+    margin-bottom: 35px;
+    padding: 30px;
+    border-radius: 12px; /* 角を丸く */
+    border-left: 5px solid #f39c12; /* 左側にアクセントボーダー */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* ホバーエフェクト */
+}
+
+section:hover {
+    transform: translateY(-5px); /* 少し浮き上がる */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+section h2 {
+    font-size: 1.8em;
+    font-weight: 600;
+    color: #f39c12; /* ヘッダーのグラデーションに合わせた色 */
+    border-bottom: none; /* 下線を削除 */
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+/* --- 趣味のリスト --- */
+ul {
+    list-style: none;
+    padding-left: 0;
+    display: flex; /* 横並びに */
+    flex-wrap: wrap; /* 折り返し */
+    gap: 12px; /* アイテム間の隙間 */
+}
+
+ul li {
+    background-color: #333;
+    color: #f1f1f1;
+    padding: 10px 20px;
+    margin-bottom: 0;
+    border-radius: 20px; /* ピル形状 */
+    font-weight: 400;
+    transition: background-color 0.3s ease;
+}
+
+ul li:hover {
+    background-color: #e74c3c; /* ホバー時の色変更 */
+    cursor: default;
+}
+
+/* --- 連絡先のリンク --- */
+a {
+    color: #f39c12;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #e74c3c;
+    text-decoration: none;
+}
+
+/* --- プロフィール画像 --- */
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: -100px auto 20px; /* ヘッダーに少し重なるように配置 */
+    border: 5px solid #1e1e1e;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    position: relative;
+    z-index: 10;
+}
+
+/* --- フッター --- */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #6c757d;
+}
